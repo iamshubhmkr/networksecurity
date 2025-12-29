@@ -1,0 +1,36 @@
+[ 2025-12-27 20:02:59,967 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-12-27 20:02:59,975 ] 107 dagshub - INFO - Accessing as iamshubhmkr
+[ 2025-12-27 20:03:00,860 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/iamshubhmkr/networksecurity "HTTP/1.1 200 OK"
+[ 2025-12-27 20:03:01,698 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-12-27 20:03:01,701 ] 107 dagshub - INFO - Initialized MLflow to track repo "iamshubhmkr/networksecurity"
+[ 2025-12-27 20:03:01,702 ] 107 dagshub - INFO - Repository iamshubhmkr/networksecurity initialized!
+[ 2025-12-27 20:03:01,703 ] 23 root - INFO - Initiate the data ingestion
+[ 2025-12-27 20:03:03,716 ] 65 root - INFO - Performed train test split on the dataframe
+[ 2025-12-27 20:03:03,716 ] 67 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[ 2025-12-27 20:03:03,716 ] 75 root - INFO - Exporting train and test file path.
+[ 2025-12-27 20:03:03,761 ] 84 root - INFO - Exported train and test file path.
+[ 2025-12-27 20:03:03,761 ] 25 root - INFO - Data Initiation Completed
+[ 2025-12-27 20:03:03,764 ] 30 root - INFO - Initiate the data Validation
+[ 2025-12-27 20:03:03,799 ] 32 root - INFO - Required number of columns:2
+[ 2025-12-27 20:03:03,799 ] 33 root - INFO - Data frame has columns:31
+[ 2025-12-27 20:03:03,799 ] 32 root - INFO - Required number of columns:2
+[ 2025-12-27 20:03:03,799 ] 33 root - INFO - Data frame has columns:31
+[ 2025-12-27 20:03:03,928 ] 32 root - INFO - data Validation Completed
+[ 2025-12-27 20:03:03,928 ] 37 root - INFO - data Transformation started
+[ 2025-12-27 20:03:03,928 ] 63 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[ 2025-12-27 20:03:03,928 ] 65 root - INFO - Starting data transformation
+[ 2025-12-27 20:03:03,942 ] 48 root - INFO - Entered get_data_trnasformer_object method of Trnasformation class
+[ 2025-12-27 20:03:03,942 ] 53 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[ 2025-12-27 20:03:03,947 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-12-27 20:03:03,956 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-12-27 20:03:03,956 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-12-27 20:03:03,960 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-12-27 20:03:03,961 ] 41 root - INFO - data Transformation completed
+[ 2025-12-27 20:03:03,961 ] 43 root - INFO - Model Training sstared
+[ 2025-12-27 20:08:46,056 ] 868 urllib3.connectionpool - WARNING - Retrying (Retry(total=6, connect=7, read=6, redirect=7, status=7)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /iamshubhmkr/networksecurity.mlflow/api/2.0/mlflow/runs/get?run_uuid=1cf667e49ec54b7eb1a2ddde6a0adb2d&run_id=1cf667e49ec54b7eb1a2ddde6a0adb2d
+[ 2025-12-27 20:09:49,935 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-12-27 20:09:49,937 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-12-27 20:09:49,937 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-12-27 20:09:49,955 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-12-27 20:09:49,955 ] 173 root - INFO - Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts/12_27_2025_20_02_56/model_trainer/trained_model/model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.990928549587198, precision_score=0.9878073562284089, recall_score=0.9940695296523517), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.9776207302709069, precision_score=0.97265625, recall_score=0.9826361483820047))
+[ 2025-12-27 20:09:49,962 ] 48 root - INFO - Model Training artifact created
